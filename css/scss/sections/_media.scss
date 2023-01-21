@@ -1,0 +1,285 @@
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
+
+    .trend {
+        padding-top: 1px;
+        &__poster {
+            ul {
+                gap: 20px;
+            }
+        }
+    }
+    
+
+    .genres {
+        padding-top: 50px;
+    }
+
+
+    .actors {
+        padding-top: 1px;
+        &__choice {
+            ul {
+                margin-top: 20px;
+                li {
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .register {
+        &__bg {
+            width: 85%;
+            &__text {
+                font-size: 40px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    
+    .hero {
+        &__banner {
+            &::after {
+                content: '';
+                background: linear-gradient(to left, transparent -60%, black 100%);
+            }
+        }
+    }
+
+    .trend {
+        &__poster {
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+        }
+    }
+
+    .genres {
+        &__choice {
+            li {
+                height: 150px;
+            }
+        }
+    }
+
+    .actors {
+        &__choice {
+            ul {
+                grid-template-columns: repeat(3, 2fr);
+                gap: 10px;
+                li {
+                    a {
+                        img {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .soon {
+        &__bg {
+            &__2021 {
+                right: 10px;
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+        &__img_wrap {
+            width: 100%;
+            border-radius: 25px 25px 25px 25px;
+        }
+    }
+
+    .footer {
+        &__block {
+            // &:first-child {
+            //     display: none;
+            // }
+        }
+        &__blocks {
+            li {
+                font-size: 10px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    .register {
+        &__bg {
+            grid-template-columns: 2.5fr 1.5fr;
+            &__btn {
+                align-items: center;
+            }
+            &__text {
+                margin-top: 45px;
+                font-size: 25px;
+            }
+        }
+    }
+    .footer {
+        &__blocks {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__block {    
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 546px;
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .register {
+        &__bg {
+            width: 100%;
+            // &__text {
+            //     font-size: 22px;
+            // }
+        }
+    }
+    .genres {
+        &__choice {
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+            }
+        }
+    }
+
+    .footer {
+        &__blocks {
+            margin: 0;
+        }
+        ul {
+            padding-inline-start: 0;
+        }
+    }
+}
+
+@media (max-width: 546px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .header {
+        &__users {
+            &__link {
+                width: 30%;
+            }
+        }
+    }
+
+    .hero {
+        h1 {
+            font-size: 55px;
+            padding-top: 40px;
+        }
+    }
+
+    .trend {
+        &__upLine {
+            height: 0;
+        }
+        &__block {
+            &:first-child {
+                margin-top: -35px;
+            }
+        }
+        &__poster {
+            ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+    }
+
+    .genres {
+        &__choice {
+            ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .actors {
+        &__choice {
+            margin-top: 60px;
+            ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .soon {
+        padding-bottom: 40px;
+        &__bg {
+            
+            &__2021 {
+                
+                h2 {
+                    font-size: 35px;
+                }
+                img {
+                    width: 85%;
+                }
+                
+            }
+        }
+    }
+
+    .register {
+        display: none;
+    }
+    
+    .footer {
+        padding: 0 20px 0 20px;
+        .container {
+            max-width: 100%;
+        }
+        &__block {
+            ul {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Mulish-Black';
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'sections/header.scss';
+@import 'sections/banner.scss';
+@import 'sections/trend.scss';
+@import 'sections/genres.scss';
+@import 'sections/actors.scss';
+@import 'sections/soon.scss';
+@import 'sections/register.scss';
+@import 'sections/footer.scss';
+@import 'sections/media';

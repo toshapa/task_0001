@@ -1,0 +1,137 @@
+.hero {
+    background: $main_bg_color;
+    color: $main_text_color;
+    position: relative;
+    &__section {
+        display: flex;
+        flex-direction: row;
+    }
+    &__banner {
+        position: absolute;
+        z-index: 0;
+        object-fit: fill;
+        right: 0;
+        top: 0;
+        img {
+            // height: 766px;
+            background-image: linear-gradient(to right,  rgba(0,0,0,1),rgba(0,0,0,0))
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to left, transparent 15%, black 100%);
+        }
+    }
+    &__wrap {
+        // position: absolute;
+        z-index: 2;
+        max-width: 562px;
+        min-height: 765px;
+    }
+    &__h1 {
+        font-family: 'Marcellus-Regular';
+        font-weight: 300;
+        font-size: 80px;
+        padding-top: 120px;
+    }
+    &__min {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        font-family: 'Mulish-Black';
+        &__year {
+            margin-right: 18px;
+        }
+        &__age_restr {
+            font-family: 'Mulish-Regular';
+            font-weight: 200;
+            font-size: 14px;
+            background: 
+                linear-gradient($main_bg_color 0 0) padding-box,
+                linear-gradient(-30deg, rgba(38, 255, 242, 1), rgba(50, 108, 255, 1)) border-box;
+                color: $main_text_color;
+                padding: 0 13px;
+                border: 1.5px solid transparent;
+                border-radius: 50px;
+                display: inline-block;
+                margin-right: 18px;      
+        }
+        &__duration {
+            margin-right: 45px;
+            font-family: 'Mulish-Regular';
+            font-weight: 800;
+            font-size: 16px;
+        }
+        &__raiting  {
+            display: flex;
+            flex-direction: row;
+            p {
+                font-family: 'Mulish-Regular';
+                font-weight: 800;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &__descr {
+        margin-top: 35px;
+        font-family: 'Mulish-Light';
+        font-size: 18px;
+        line-height: 28px;
+        color: $header_text_color;
+    }
+    &__btn {
+        margin-top: 35px;
+    }
+    &__watch { 
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+        &__link {
+            display: flex;
+            flex-direction: row;
+            @include rounded_btn;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $main_text_color;
+            svg {
+                margin-right: 15px;
+            }
+        }   
+    }
+    &__info {
+        display: grid;
+        width: 195px;
+        height: 50px;
+        background: $main_text_color;
+        text-decoration: none;
+        color: $main_bg_color;
+        border-radius: 50px;
+        text-align: center;
+        align-content: center;
+        font-family: 'Mulish-Black';
+        transition: all 0.5s;
+        &:hover {
+            width: 210px;
+            height: 60px;
+        }
+    }
+    .divider {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: rgba(47, 46, 46, 1);
+    }
+}
